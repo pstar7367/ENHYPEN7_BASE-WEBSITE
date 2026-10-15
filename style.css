@@ -2001,3 +2001,57 @@ a:focus-visible,
   }
 }
 
+
+/* =========================================
+   ENHYPEN7_BASE — SOCIAL LINKS
+========================================= */
+
+.footer-social-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.instagram-link {
+  display: grid;
+  width: 45px;
+  height: 45px;
+  place-items: center;
+  border: 1px solid var(--gold-dark);
+  border-radius: 50%;
+  color: var(--text);
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.instagram-link:hover {
+  background: var(--gold);
+  color: #080808;
+}
+
+.instagram-link svg {
+  width: 21px;
+  height: 21px;
+}
+
+.footer-instagram-text {
+  color: var(--gold-light);
+  font-size: 11px;
+  text-decoration: none;
+}
+
+.footer-instagram-text:hover,
+.footer-x-text:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 480px) {
+  .footer-social-links {
+    gap: 10px;
+  }
+}
+
